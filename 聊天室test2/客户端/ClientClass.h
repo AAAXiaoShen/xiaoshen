@@ -1,6 +1,5 @@
 #pragma once
 #pragma warning(disable:4996)
-#include"MsgType.hpp"
 #include"../ÁÄÌìÊÒtest2/SocketInit.hpp"
 #include <process.h>
 #include<Windows.h>

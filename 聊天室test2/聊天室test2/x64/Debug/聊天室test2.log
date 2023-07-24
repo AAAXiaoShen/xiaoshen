@@ -1,4 +1,6 @@
 ﻿  ServerClass.cpp
-D:\my c++ projects\聊天室test2\聊天室test2\ServerClass.cpp(30,36): warning C4267: “参数”: 从“size_t”转换到“int”，可能丢失数据
-D:\my c++ projects\聊天室test2\聊天室test2\ServerClass.cpp(102,75): warning C4312: “类型强制转换”: 从“int”转换到更大的“LPVOID”
+D:\my c++ projects\聊天室test2\聊天室test2\ServerClass.cpp(28,36): warning C4267: “参数”: 从“size_t”转换到“int”，可能丢失数据
+D:\my c++ projects\聊天室test2\聊天室test2\ServerClass.cpp(100,75): warning C4312: “类型强制转换”: 从“int”转换到更大的“LPVOID”
+  ServerMain.cpp
+  正在生成代码...
   聊天室test2.vcxproj -> D:\my c++ projects\聊天室test2\x64\Debug\聊天室test2.exe

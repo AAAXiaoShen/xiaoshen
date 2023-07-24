@@ -1,7 +1,5 @@
 #include "ServerClass.h"
 
-
-
 using namespace std;
 
 

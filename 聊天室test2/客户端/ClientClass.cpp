@@ -4,7 +4,7 @@
 using namespace std;
 
 
-DWORD WINAPI Send(LPVOID lp) {
+void Send(LPVOID lp) {
 
 	SOCKET ClntSock = *(SOCKET*)lp;
 
@@ -50,7 +50,7 @@ void ClientClass::ConnectServer(const char* ip, unsigned short port) {//连接服务
 
 void ClientClass::SendData() {
 
-	CreateThread(0, 0, Send, (LPVOID)&ClntSock, 0, 0);
+	CreateThread(0, 0, (LPTHREAD_START_ROUTINE)Send, (LPVOID)&ClntSock, 0, 0);
 
 }
 
@@ -59,10 +59,12 @@ void ClientClass::RecvData() {
 
 	int n = 0;
 
+	int Strlen;
+
 	initgraph(300, 400, 1);//接收消息的窗口
 
 	while (true) {
-		int Strlen = recv(ClntSock, buff, 255, NULL);
+		Strlen = recv(ClntSock, buff, 255, NULL);
 		if (Strlen > 0) {
 			//显示到图形界面窗口
 			buff[Strlen] = 0;
